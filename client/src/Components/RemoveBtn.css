@@ -1,0 +1,15 @@
+.remove-button {
+    border:none;
+    color: #afc4d5;
+    font-size: 24px;
+    float: right;
+    position: relative;
+    bottom: 30px;
+    right: 20px;
+}
+
+.remove-button:hover {
+    cursor: pointer;
+    color: #8ab3d4;
+    transform: scale(1.2);
+}

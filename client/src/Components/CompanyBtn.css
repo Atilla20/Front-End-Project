@@ -1,0 +1,12 @@
+.company-button {
+    border:none;
+    color:  #afc4d5;
+    font-size: 24px;
+    font-family: Helvetica;
+}
+
+.company-button:hover {
+    cursor: pointer;
+    color: #8ab3d4;
+    transform: scale(1.2);
+}
