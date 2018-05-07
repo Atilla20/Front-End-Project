@@ -32,7 +32,7 @@ export default class App extends React.Component {
       <div className="container">
         <div className="row">
             <div className="col-md-10 jumbotron">
-              < AddBtn/>
+              < AddBtn addCompany={this.addCompany.bind(this)}/>
               <Company companies={this.state.companies} />
 
             </div>
@@ -40,5 +40,12 @@ export default class App extends React.Component {
       </div>
       
     );
+  }
+
+  addCompany= (name) => {
+    this.state.companies.push({
+      name
+    });
+    this.setState({companies: this.state.companies});
   }
 }
