@@ -8,7 +8,7 @@ class AddBtn extends Component {
             <div className="custom-search">
                 <form>
                     <input type="text" placeholder="Add a company..." className="add-btn" ref="createInput"/>
-                    <button onClick={this.handleAdd.bind(this)}className="search-add" type="submit"></button>
+                    <button onClick={this.handleAdd.bind(this)} className="search-add" type="submit"></button>
                 </form>
             </div>
 
