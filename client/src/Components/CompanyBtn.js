@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
-import "./CompanyBtn.css";
+import './CompanyBtn.css';
 import RemoveBtn from './RemoveBtn';
 
-
-class CompanyBtn extends Component {
-
-
+class CompanyBtnName extends Component {
     render() {
-        return (
+        return(
             <div className="panel panel-default">
                 <div className="panel-body">
-                        <button type="button" className="company-button btn btn-default"> 
-                        {this.props.showCompanies()}
-                        </button>
-                
+                <button type="button" className="company-button btn btn-default"> 
+                {this.props.name}
+                </button>
 
-                    < RemoveBtn />
+                 < RemoveBtn />
                 </div>
             </div>
+           
         );
     }
 }
-
-export default CompanyBtn;
+export default CompanyBtnName; 

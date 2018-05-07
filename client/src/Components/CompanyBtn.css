@@ -10,24 +10,3 @@
     color: #8ab3d4;
     transform: scale(1.2);
 }
-
-.panel {
-    background-color:white;
-    color: #afc4d5;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 40px;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 80px;
-    text-align: center;
-    font-size: 24px;
-    font-family: "Helvetica";
-}
-
-.panel:hover {
-    transform: scale(1.1);
-    cursor:pointer;
-
-}
