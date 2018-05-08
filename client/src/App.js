@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import AddBtn from './Components/AddBtn';
 import Company from './Components/Company';
-
+import _ from 'lodash';
 
 const companies = [
   {
@@ -33,7 +33,10 @@ export default class App extends React.Component {
         <div className="row">
             <div className="col-md-10 jumbotron">
               < AddBtn addCompany={this.addCompany.bind(this)}/>
-              <Company companies={this.state.companies} />
+              <Company 
+              companies={this.state.companies} 
+              deleteCompany={this.deleteCompany.bind(this)}
+              />
 
             </div>
         </div>
@@ -47,5 +50,12 @@ export default class App extends React.Component {
       name
     });
     this.setState({companies: this.state.companies});
+
+  }
+
+  deleteCompany(nameToDelete) {
+      _.remove(this.state.companies, company => company.name === nameToDelete);
+      this.setState({ companies: this.state.companies });
+    
   }
 }

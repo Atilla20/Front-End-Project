@@ -18,6 +18,7 @@ class AddBtn extends Component {
     handleAdd(event) {
         event.preventDefault();
         this.props.addCompany(this.refs.createInput.value);
+        this.refs.createInput.value = '';
         
     }
 }

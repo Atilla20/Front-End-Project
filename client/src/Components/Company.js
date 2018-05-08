@@ -7,7 +7,9 @@ import _ from 'lodash';
 class Company extends Component {
 
     renderCompanies() {
-        return _.map(this.props.companies, (company, index) => <CompanyBtn key={ index } {...company} />);
+        const props = _.omit(this.props, 'companies');
+
+        return _.map(this.props.companies, (company, index) => <CompanyBtn key={ index } {...company} {...props} />);
 
     }
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './CompanyBtn.css';
-import RemoveBtn from './RemoveBtn';
 
 class CompanyBtnName extends Component {
     render() {
@@ -11,11 +10,12 @@ class CompanyBtnName extends Component {
                 {this.props.name}
                 </button>
 
-                 < RemoveBtn />
+                <button onClick={this.props.deleteCompany.bind(this, this.props.name)} type="button" className="remove-button btn btn-default">X</button>
                 </div>
             </div>
            
         );
     }
+  
 }
 export default CompanyBtnName; 
