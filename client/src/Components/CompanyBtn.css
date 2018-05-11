@@ -26,3 +26,29 @@
     color: #8ab3d4;
     transform: scale(1.2);
 }
+
+.recycled {
+    margin-left: 10px;
+}
+
+.recycled button {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+}
+
+.recycled .company-button {
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.recycled-remove-button {
+    margin-left: 10px;
+    border: none;
+    text-decoration: none;
+}
+
+.recycled-remove-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
